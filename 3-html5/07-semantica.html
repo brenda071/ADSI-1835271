@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Semántica</title>
+</head>
+<body>
+	<h1>Semántica (Estructura de la Página)</h1>
+</body>
+	<main>
+		<header>
+			<figure>
+				<img src="https://via.placeholder.com/50" alt="">
+			</figure>
+			<nav>
+				<ul>
+					<li><a href="">Inicio</a></li>
+					<li><a href="">Nosotros</a></li>
+					<li><a href="">Servicios</a></li>
+					<li><a href="">Contacto</a></li>
+				</ul>
+			</nav>
+		</header>
+		<section>
+			<aside>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, consectetur culpa minima quo quas animi, dolores facilis officiis minus soluta, voluptatem obcaecati! Omnis assumenda facilis, quis velit, exercitationem quaerat quisquam?
+				</p>
+			</aside>
+			<article>
+				<img src="https://via.placeholder.com/150" alt="">
+				<h2>Lorem ipsum dolor.</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et minus numquam eius alias illo magni amet, vel omnis, odio atque fuga ea ipsum cupiditate aspernatur delectus pariatur. Eligendi, commodi, praesentium.</p>
+			</article>
+			<article>
+				<img src="https://via.placeholder.com/150" alt="">
+				<h2>Lorem ipsum dolor.</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius accusantium aspernatur eos, nam illo, consectetur aliquam ex fugit? Delectus, a illum placeat sit, dolore nemo enim possimus. Perferendis, voluptatum a!</p>
+			</article>
+			<article>
+				<img src="https://via.placeholder.com/150" alt="">
+				<h2>Lorem ipsum dolor.</h2>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem corporis dolor ex vero ratione ducimus nostrum iste quibusdam accusantium nobis, quas neque aspernatur impedit deserunt ipsa facere inventore recusandae quam!
+				</p>
+			</article>
+		</section>
+		<footer>
+			<p>&copy; Lorem ipsum dolor sit amet 2019.</p>
+		</footer>
+	</main>
+</html>
+
+<!-- 
+main>(header>figure+nav>ul>(li>a)*4)
+section>(aside)+(article>img+h2+p)*3
+footer>p
+-->
