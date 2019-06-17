@@ -1,0 +1,16 @@
+doctype
+html(lang="es")
+	head
+		meta(charset="UTF-8")
+		title Javascript
+	body
+		h1 Javascript
+		h2#mensaje
+
+		script.
+			var ms = document.getElementById('mensaje');
+			var nm = prompt('Cuál es su nombre?');
+			var fa = new Date();
+
+			ms.innerHTML = "Bienvenido: "+nm;
+			ms.innerHTML += "- Fecha de Ingreso: "+fa.getHours()+":"+fa.getMinutes();
