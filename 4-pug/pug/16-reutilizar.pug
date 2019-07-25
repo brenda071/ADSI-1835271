@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		title Reutilizar
+	body
+		h1 Reutilizable (mixin)
+		mixin serie(name, caps)
+			li= name+'('+caps+')'
+		+serie('shingeki no kyojin',60)
+		+serie('kimetsu no yaiba',16)
+		+serie('one punch man',24)
+		+serie('vinland Saga',3)
+
+	
