@@ -4,6 +4,6 @@ var qns = prompt("¿cuál es su nombre?");
 
 if(qns == "Brenda") {
 	ans.innerHTML = "Bienvenido administrador "+qns;
-} else {
+}else{ 
 	ans.innerHTML = "Bienvenido Visitante "+qns;
 }
