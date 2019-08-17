@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Posicionamiento (normal/estático)</title>
+    <style>
+        h1 {
+            color: darkslategray;
+            text-align: center;
+        }
+
+        main {
+            margin: 0px auto;
+            width: 960px;
+        }
+
+        main section {
+            border: 1px solid rgb(52, 88, 61);
+            display: inline-block;
+            padding: 10px;
+            vertical-align: top;
+            width: 448px;
+        }
+
+        main section.block {}
+
+        main section.inline {
+            margin-left: 16px rgb(52, 88, 61);
+        }
+
+        main section.block div {
+            border: 1px solid rgb(255, 135, 155);
+            padding: 20px;
+            margin: 5px 0;
+        }
+
+        main section.inline div {
+            border: 1px dashed rgb(255, 135, 155);
+            padding: 20px 0;
+            margin: 5px 0;
+        }
+
+        main section.inline div a {
+            border: 1px solid rgb(255, 135, 155);
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Posicionamiento (normal/estático)</h1>
+    <main>
+        <section class="block">
+            <h4>Elemetos Bloque</h4>
+            <div>Elemento de bloque</div>
+            <div class="tres">Elemento de bloque</div>
+            <div>Elemento de bloque</div>
+        </section>
+        <section class="inline">
+            <h4>Elementos línea</h4>
+            <div>
+                <a href="" target="_blank">Google</a>
+                <a href="" target="_blank">Yahoo</a>
+            </div>
+            <div></div>
+        </section>
+    </main>
+</body>
+
+</html>
