@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=(device-width), initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contenido Sobrante (overflow)</title>
+    <style>
+        section.overflow {
+            margin: 10px auto;
+            width: 500px;
+        }
+        section.overflow div {
+            border: 1px solid rgba(18, 59, 75, 0.685);
+            display: inline-block;
+            height: 250px;
+            padding: 10px;
+            vertical-align: top;
+            width: 140px;
+        }
+        section.overflow div h3{
+            background-color: rgba(18, 59, 75, 0.685);
+            padding: 10px;
+            margin: 0;
+        }
+        section.overflow div.box1 {overflow: visible}
+        section.overflow div.box2 {overflow: hidden}
+        section.overflow div.box3 {overflow: scroll}
+    </style>
+</head>
+
+<body>
+    <h1>Contenido Sobrante (overflow)</h1>
+    <section class="overflow">
+        <div class="box1">
+            <h3>overflow:visible</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet quaerat ipsam architecto impedit maiores
+                deleniti
+                maxime vero perferendis magnam accusantium molestiae eaque nostrum, dignissimos dolore, ipsum magni sed,
+                molestias quisquam quam est error.
+                Veritatis sapiente, ipsa hic sed expedita, beatae magni itaque neque eveniet sit perferendis assumenda
+                blanditiis culpa modi.
+            </p>
+        </div>
+        <div class="box2">
+            <h3>overflow:hidden</h3>
+            <p>Officiis ex iure accusamus blanditiis dolores molestiae deserunt libero magnam consequatur maxime
+                deleniti odio,
+                soluta suscipit neque, inventore obcaecati totam, molestias quas hic nobis aut cumque excepturi? Quos
+                debitis, dolorum fugit
+                minus mollitia laborum? Dolore natus error earum sequi blanditiis quo nesciunt maxime praesentium
+                dignissimos. Id asperiores expedita alias ab!
+            </p>
+        </div>
+        <div class="box3">
+            <h3>overflow:scroll</h3>
+            <p>Iure accusantium molestias, et laboriosam quae hic. Atque assumenda, dolore quibusdam numquam harum modi
+                iste mollitia quae natus eveniet!
+                Obcaecati itaque praesentium ea dolores enim! Esse aliquid voluptatibus odio aut. Officiis tempora
+                assumenda dolorem placeat numquam hic laudantium
+                neque ipsam voluptate, animi repellendus magnam accusantium. Quae quisquam eos voluptatum id?
+            </p>
+        </div>
+    </section>
+</body>
+
+</html>
