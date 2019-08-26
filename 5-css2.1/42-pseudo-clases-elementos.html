@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pseudo (Clases/Elemento)</title>
+    <style>
+        body{
+            font: 16px Arial;
+        }
+        nav.links {
+            width: 600px;
+            margin: 10px auto;
+        }
+        nav.links a {
+            display: inline-block;
+            width: 125px;
+        }
+        nav.links a:link:first-child {
+            color: rgb(140, 42, 165);
+        }
+        nav.links a:link,        
+        nav.links a:visited {
+            background-color: rgb(91, 235, 179);
+            border-bottom: 5px solid rgba(27, 29, 134, 0.74); 
+            color: rgb(11, 124, 124);
+            padding: 10px;
+            text-align: center;
+            text-decoration: none;        }
+        nav.links a:hover {
+            background-color: rgba(27, 29, 134, 0.74);
+            border-bottom: 1px solid rgb(23, 77, 56);
+            color: rgb(91, 235, 179);
+
+        }
+        nav.links a:active {
+            background-color: rgb(14, 108, 124);
+            border-bottom: 10px solid rgb(91, 235, 179);
+            color: rgb(23, 77, 56);
+        }
+        input.input {
+            border: 2px solid rgb(153, 76, 22);
+            outline: none;
+            padding: 10px;
+        }
+        input.input:focus {
+            background-color: rgb(161, 221, 245);
+            border: 1px dotted rgb(50, 128, 98);
+        }
+        p {
+            margin: 10px auto;
+            padding: 10px;
+            width: 600px;
+        }
+        p:first-letter {
+            color: chocolate;
+            font-size: 5em;
+        }
+        p:first-line {
+            background-color: rgb(214, 243, 247);
+            text-decoration: underline;
+        }
+        div.box {
+            background-color: rgb(4, 145, 74);
+            height: 200px;
+            width: 200px;
+        }
+        div.box:before {
+            background-color: blueviolet;
+            content: "";
+            position: absolute;
+            left: 25px;
+            height: 200px;
+            width: 200px;
+        }
+        div.box:after {
+            background-color: rgb(20, 145, 145);
+            content: ":v";
+            position: absolute;
+            left: 40px;
+            height: 200px;
+            width: 200px;
+            z-index: 2;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Pseudo (Clases/Elemento)</h1>
+        <h4>Enlaces (link, visited, active, hover) (first-child)</h4>
+        <nav class="links">
+            <a href="javascript:;">Home</a>
+            <a href="javascript:;">About Us</a>
+            <a href="javascript:;">Services</a>
+            <a href="javascript:;">Contac Us</a>
+        </nav>
+        <h4>Elemento de Entrada de Formulario (Focus)</h4>
+        <input type="text" class="input" placeholder="Correo Electrónico">
+        <h4>Primera Letra/Línea</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt excepturi quaerat officia quis, tenetur id doloremque, illo sed quasi pariatur consequuntur veniam ipsa reprehenderit voluptatibus deleniti magnam, corrupti nesciunt enim!</p>
+        <h4>Antes/Después</h4>
+        <div class="box"></div>
+    </main>
+</body>
+</html>

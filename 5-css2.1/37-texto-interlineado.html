@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Texto (Interlineado)</title>
+    <style>
+        section.lineheight {
+
+            width: 700px;
+            margin: 10px auto;
+        }
+        section.lineheight div {
+            border: 1px solid rgb(4, 97, 85);
+            display: inline-block;
+            padding: 10px;
+            vertical-align: top;
+            width: 150px;
+        }
+        section.lineheight div.lh1 { line-height: 0.5em;    }
+        section.lineheight div.lh2 { line-height: 1em;   }
+        section.lineheight div.lh3 { line-height: 1.5em;  }
+    </style>
+</head>
+
+<body>
+    <main>
+        <h1>Texto (Interlineado)</h1>
+        <section class="lineheight">
+            <div class="lh1"><h5>line-height: 0.5em</h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, nostrum.</div>
+            <div class="lh2"><h5>line-height: 1em</h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, incidunt!</div>
+            <div class="lh3"><h5>line-height: 1.n5em</h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, vitae!</div>
+        </section>
+    </main>
+</body>
+
+</html>

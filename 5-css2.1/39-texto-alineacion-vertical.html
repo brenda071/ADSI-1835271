@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        section.verticalalign {    
+            width: 700px;
+            margin: 20px auto;
+        }
+    
+        section.verticalalign div {
+            border: 2px solid rgb(63, 122, 71);
+            display: inline-block;
+            display: table-cell;
+            padding: 10px;
+            width: 150px;
+        }
+        
+        section.verticalalign div.val1 {vertical-align: baseline;}
+        section.verticalalign div.val2 {vertical-align: middle;}
+        section.verticalalign div.val3 {vertical-align: middle;}
+        section.verticalalign div.val1 {vertical-align: baseline;}
+        section.verticalalign div.val2 img.center1{vertical-align: baseline;}
+        section.verticalalign div.val2 img.center2{vertical-align: top;}
+        section.verticalalign div.val3 img.center3{vertical-align: middle;}
+    </style>
+</head>
+
+<body>
+    <main>
+        <h1>Texto Vertical</h1>
+        <section class="verticalalign">
+            <div class="val1"><img class="center1" src="imgs/help.png" width=80px; >Ayuda</div>
+            <div class="val2"><img class="center2" src="imgs/help.png" width=80px; >Ayuda</div>
+            <div class="val3"><img class="center3" src="imgs/help.png" width=80px; >Ayuda</div>
+        </section>
+    </main>
+</body>
+</html>

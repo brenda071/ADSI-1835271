@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Texto (Tabulación)</title>
+    <style>
+        section.indent {
+
+            width: 700px;
+            margin: 10px auto;
+        }
+        section.indent div {
+            border: 1px solid rgb(4, 97, 85);
+            display: inline-block;
+            padding: 10px;
+            vertical-align: top;
+            width: 150px;
+        }
+        section.indent div.ti1 { text-indent: 0em;}
+        section.indent div.ti2 { text-indent: 2em;}
+    </style>
+</head>
+
+<body>
+    <main>
+        <h1>Texto (Tabulación)</h1>
+        <section class="indent">
+            <div class="ti1">
+                <h5>text-indent: 0em</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, nostrum.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, nostrum.</p>
+
+            </div>
+            <div class="ti2">
+                <h5>text-indent: 2em</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, incidunt!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, nostrum.</p>
+            
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

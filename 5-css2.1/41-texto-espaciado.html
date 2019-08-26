@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        main.spacing div {
+            border: 2px solid rgb(63, 122, 71);
+            display: inline-block;
+            display: table-cell;
+            padding: 10px;
+            width: 150px;
+        }
+
+        /* Espaciado entre Letras */
+        main.spacing p.ls1 {
+            letter-spacing: 1em;
+        }
+
+        /* Espaciado entre palabras */
+        main.spacing p.ws1 {
+            word-spacing: 2em;
+        }
+    </style>
+</head>
+
+<body>
+    <main class="spacing">
+        <h1>texto (Espaciado)</h1>
+        <h4>letter-spacing</h4>
+        <p class="ls1">Lorem Ipsum</p>
+        <h4>word-spacing</h4>
+        <p class="ws1">Lorem ipsum dolor sit amet.</p>
+    </main>
+</body>
+
+</html>
