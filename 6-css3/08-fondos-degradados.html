@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Fondos (Gradientes)</title>
+	<link rel="stylesheet" href="css/master.css">
+	<style>
+		div.box {
+			border: 2px dashed hsl(0,50,100%);			
+			height: 250px;
+			margin: 20px auto;
+			width: 400px;
+		}
+		div.box1 {
+			background: linear-gradient(to top, #016161,black);
+		}
+		div.box2 {
+			background: linear-gradient(45deg, #016161,black);
+		}
+		div.box3 {
+			background: linear-gradient(to bottom, yellow 40%,blue 40%,blue 70%,red 70%);
+		}
+		div.box4 {
+			background: linear-gradient(to right, #016161 40% ,black );
+			background-size: 40px 100%;
+			background-position: center;
+		}
+		div.box5 {
+			background: radial-gradient(circle, #016161,black);
+		}
+		div.box6 {
+			background: radial-gradient(circle, #016161 20%,black 20%,black 40%,#016161 40%,#016161 60%,black 60%,black 80%,#016161 80% );
+		}
+		div.box7 {
+			background: radial-gradient(circle, #016161,black,#016161 ,black);
+		}
+	</style>;
+
+</head>
+<body>
+	<main>
+		<header>
+			<h1>Fondos (Gradientes)</h1>
+		</header>
+		<section>
+			<h3>linear-gratient(to top, #016161,black)</h3>
+			 <div class="box box1"></div>
+			 <h3>linear-gratient(45deg, #016161,black)</h3>
+			 <div class="box box2"></div>
+			 <h3>linear-gratient(to bottom, yellow 40%,blue 40%,blue 70%,red 70%)</h3>
+			 <div class="box box3"></div>
+			 <h3>linear-gratient(to right, #016161 40% ,black )</h3>
+			 <div class="box box4"></div>
+			 <h3>radial-gratient(circle, #016161,black)</h3>
+			 <div class="box box5"></div>
+			 <h3>linear-gratient(circle, #016161 20%,black 20%,black 40%,#016161 40%,#016161 60%,black 60%,black 80%,#016161 80% )</h3>
+			 <div class="box box6"></div> 
+			 <h3>linear-gratient(circle, #016161,black,#016161 ,black)</h3>
+			 <div class="box box7"></div> 
+		</section>
+	</main>
+</body>
+</html>
