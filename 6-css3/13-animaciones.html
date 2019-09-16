@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Animaciones</title>
+	<link rel="stylesheet" href="css/master.css">
+	<style>
+		section {
+			background: url(imgs/garden.jpg) no-repeat center;
+			background-size: cover;
+			height: 480px;
+			position: relative;
+			margin: 20px auto;
+			width: 800px;
+		}
+		div.dove {
+			background: url(imgs/dove.gif) no-repeat center;
+			height: 140px;
+			background-size: cover;
+			position: absolute;
+			width: 120px;
+			animation: animDove 6s ease-in;
+		}
+		@keyframes animDove {
+			0%{ 
+				left: 0px; 
+				top: 0px;
+				transform: rotateY(0deg);
+			}
+			50%   { 
+				left: 350px;
+				top: 100px;
+				transform: rotateY(180deg);
+			}
+			55%   { 
+				left: 320px;
+				top: 250px;
+				transform: rotateY(180deg);
+			}
+			60% { 
+				left: 200px; 
+				top: 250px;
+				transform: scale(5);
+			}
+			100%{ 
+				left: 0px; 
+				top: 0px;
+				transform: rotateY(180deg);
+			}
+		}
+	</style>
+</head>
+<body>
+	<main>
+		<header>
+			<h1>Animaciones</h1>
+		</header>
+		<section>
+			<div class="dove"></div>
+		</section>
+	</main>
+</body>
+</html>

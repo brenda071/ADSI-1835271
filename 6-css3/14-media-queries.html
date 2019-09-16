@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Media Queries</title>
+	<style>
+		* {
+			transition: all 0.5s ease-in;
+		}
+		body {
+			background-color: #013571;
+			color: rgba(255,255,255,0.6);
+			margin: 0px;
+			font: 16px Tahoma;
+		}
+		main {
+			border: 10px solid rgba(255,255,255,0.6);
+			margin: 20px auto;
+			padding: 20px;
+			width: 950px;
+
+		}
+		main figure.logo {
+			background: url(imgs/pepsi01.png) no-repeat center;
+			height: 354px;
+			margin: 0px auto;
+			width: 919px;
+		}
+		main h1 {
+			text-align: center;
+		}
+		main h1 small.bp2,
+		main h1 small.bp3 {
+			display: none;
+		}
+		main p {
+			line-height: 1.8em;
+			text-align: justify;
+		}
+		@media (max-width: 1024px){
+			main {
+				width: 740px;
+			}
+			main figure.logo {
+				background: url(imgs/pepsi02.png) no-repeat center;
+				width: 348px;
+				height: 360px;
+			}
+			main h1 small.bp1,
+			main h1 small.bp3 {
+				display: none;
+			}
+			main h1 small.bp2 {
+				display: inline;
+				
+			}
+		}
+		@media (max-width: 780px) {
+			main {
+				width: 380px;
+			}
+			main h1 small.bp1,
+			main h1 small.bp2 {
+				display: none;
+			}
+			main h1 small.bp3 {
+				display: inline;
+			}
+		}
+	</style>
+</head>
+<body>
+	<main>
+		<figure class="logo"></figure>
+		<h1>Media Queries 
+			<small class="bp1">(Desktop: 1024px)</small>
+			<small class="bp2">(Tablet: 780px)</small>
+			<small class="bp3">(Mobile: 440px)</small>
+		</h1>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, ipsum, suscipit. Tenetur vitae aperiam fugit sequi quos, excepturi explicabo, inventore quod error, aliquam totam magni voluptatum eaque dolores asperiores laudantium tempora temporibus aspernatur non deserunt vel illum quam. Molestiae numquam blanditiis, corporis consequuntur vel rerum vero id voluptate magni asperiores voluptatem sit repellat nostrum, aliquam, dolorum maiores omnis necessitatibus amet aperiam ratione a officia iusto. Animi illo est, qui natus blanditiis, aut, iste architecto rem et fugiat quasi. Exercitationem consectetur voluptatum tempora temporibus assumenda earum, veniam cum quidem ducimus inventore, ipsum fuga veritatis, odit ex vero nesciunt adipisci eveniet ea.  
+		<p>
+	</main>
+</body>
+</html>
