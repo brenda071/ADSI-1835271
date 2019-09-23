@@ -4,34 +4,280 @@
 	<meta charset="UTF-8">
 	<title>Reto</title>
 	<style>
+		*{
+			transition: all .5s ease-out;
+		}
+		@font-face {
+			font-family: dead;
+			src: url(fonts/dead.otf);
+		}
 		body {
-			background-color: black;
+            background: url(imgs/1.png);
+            background-color: rgb(0, 0, 0);
+            background-attachment: fixed; /*scroll*/
+            font: 16px Arial;
 		}
 		main {
-			border: 10px solid rgba(255,255,255,0.6);
-			margin: 20px auto;
-			padding: 20px;
+			border: 10px dotted rgba(112, 101, 101, 0.6);
+			margin: 10px auto;
+			padding: 10px;
 			width: 950px;
 		}
 		main figure.logo {
-			background: url(imgs/dead.png) no-repeat center;
-			height: 594px;
+			background: url(imgs/dead1.png) no-repeat center;
+			cursor: pointer;
+			transform: scale(1) translateY(40px);
+			height: 200px;
 			margin: 0px auto;
-			width: 845px;
-			transform: scale(0.6) translateY(-100px);
+			width: 600px;
+		}
+		main figure.logo:hover {
+			transform: scale(0.9);
+		}
+		section.one div.box,
+		section.two ,
+		section.three  {
+			border: 2px solid white;
+			margin: 10px;
+		}
+		section.one div.box {
+			cursor: help;
+			display: inline-block;
+			width: 210px;
+			height: 210px;
+		}
+		section.two ,
+		section.three  {
+			padding: 10px;
+			width: auto;
+			height: 220px;
+			cursor: pointer;
+		}
+		section.one div.box.box1 {
+            background: url(imgs/rick.jpg) -8px 0px;
+            background-size: 225px 210px;
+        }
+		section.one div.box.box2 {
+            background: url(imgs/carl.jpg) -50px 0px;
+            background-size: 320px 210px;
+        }
+		section.one div.box.box3 {
+            background: url(imgs/dixon.jpg) -10px 0px;
+            background-size: 225px 210px;
+        }
+		section.one div.box.box4 {
+            background: url(imgs/michonne.jpg) -30px 0px;
+            background-size: 300px 210px;
+        }
+		P.texto1,
+		p.texto2,
+		h2.titulo {
+			color: white;
+			position: relative;
+			font-size: 13px;
+
+		}
+		p.texto1 {
+			background-color: rgba(27, 17, 17, 0.493);
+			cursor: pointer;
+			font-size: 20px;
+			text-align: center;
+            display: inline-block;
+            height: 40px;
+            padding: 12px;
+            width: 192px;
+			left: -3px;
+            top: 130px;
+		}
+		p.texto2,
+		h2.titulo {
+            margin: 10px;
+            text-align: justify;
+            line-height: 2em;
+			width: 660px;
+			left: 225px;
+			bottom: 235px;
+			cursor: text;
+		}
+		h2.titulo {
+			font-family: dead;
+			font-size: 20px;
+		}
+		strong,i,u,h2.titulo {
+			color: rgb(2, 104, 104);
+		}
+
+		/* ============================================================= */
+	
+		img.img:hover,
+		main figure.logo:hover {
+			transform: scale(0.5);
+		}
+		p.texto1:hover {
+			background-color: rgba(128, 65, 21, 0.541);
+            border-bottom: 8px solid rgb(128, 99, 5);
+		}
+
+		/* ============================================================== */
+		@media (max-width: 1000px){
+			main {
+				width: 780px;
+			}
+			main figure.logo {
+				position: relative;
+				top: -20px;
+			}
+			section.one div.box {
+				margin:6px;
+				display: inline-block;
+				width: 370px;
+				height: 370px;
+			}
+			section.one div.box.box1 {
+            	background: url(imgs/rick.jpg) -8px 0px;
+           	 	background-size: 410px 400px;
+        	}
+			section.one div.box.box2 {
+        	    background: url(imgs/carl.jpg) -50px 0px;
+        	    background-size: 515px 385px;
+        	}
+			section.one div.box.box3 {
+        	    background: url(imgs/dixon.jpg) -10px 0px;
+        	    background-size: 410px 400px;
+        	}
+			section.one div.box.box4 {
+        	    background: url(imgs/michonne.jpg) -30px 0px;
+        	    background-size: 475px 385px;
+			}
+			p.texto1 {
+				text-align: center;
+				width: 350px;
+				height: 30px;
+				top: 295px;
+			}
+			section.two {
+				margin: 5px;
+			}
+			p.texto2,h2.titulo{
+				bottom: 300px;
+				left: 290px;
+				width: 445px;
+			}
+			section.two,
+			section.three {
+				margin: 10px;
+				height: 310px;
+				width: 750px;
+			}
+			img.img {
+				position: relative;
+				top: 10px;
+				width: 290px;
+				height: 290px;
+			}
+		}
+		@media (max-width: 850px) {
+			main {
+				width: 390px;
+			}
+			main figure.logo {
+				background: url(imgs/dead2.png) no-repeat center;
+				background-size: 350px 150px;
+				position: relative;
+				top: -50px;
+				left: -10px;
+				width: 400px;
+				height: 130px;
+			}
+			section.one div.box {
+				position: relative;
+				left: 3px;
+				margin: 5px;
+				display: inline-block;
+				width: 370px;
+				height: 370px;
+			}
+			section.two,
+			section.three {
+				height: 720px;
+				width: 350px;
+			}
+			img.img {
+				position: relative;
+				top: 0px;
+				width: 350px;
+				height: 350px;
+			}
+			p.texto2 , h2.titulo {
+				text-align: left;
+				width: 340px;
+				left: 0;
+				top: 0px;
+			}
+			h2.titulo {
+				text-align: center;
+			}
+			p.texto2 {
+				position: relative;
+				left: -6px;
+				font-size: 15px;
+				height: 300px;
+				border: 2px solid pink;
+				text-align: justify;
+				overflow: scroll;
+				scrollbar-face-color: #6685CA;
+			}
 		}
 	</style>
 </head>
 <body>
 	<main>
 		<figure class="logo"></figure>
-		<h1>xxx</h1>	
-		<section>
-			<div class="box box1"></div>
-			<div class="box box2"></div>
-			<div class="box box3"></div>
-			<div class="box box4"></div>
+		<h1></h1>	
+		<section class="one">
+			<div class="box box1">
+				<p class="texto1">IMAGEN 1</p>
+			</div>
+			<div class="box box2">
+				<p class="texto1">IMAGEN 2</p>
+			</div>
+			<div class="box box3">
+				<p class="texto1">IMAGEN 3</p>
+			</div>
+			<div class="box box4">
+				<p class="texto1">IMAGEN 4</p>
+			</div>
 		</section>	
+		<section class="two">
+			<div class="tbox tbox1"></div>
+				<img class="img" src="imgs/twdgame.jpg" height="220" width="220">
+				<h2 class="titulo">CLEMENTINE</h2>
+				<p class="texto2">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum porro pariatur totam. Reprehenderit eum 
+					illo perspiciatis aliquid laudantium quae officia nisi earum? Rem, molestias ea. <i>Doloremque molestiae nisi 
+					dolorem quaerat?</i>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis, tenetur.
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, sed doloremque cupiditate voluptatem cum 
+					<strong>aut sequi veritatis necessitatibus corporis consequuntur inventore id</strong>
+					, dolorem atque officiis ipsam dolore 
+					lorum. A, id!<br>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti.
+				</p>
+		</section>
+		<section class="three">
+			<div class="ttbox ttbox1">
+				<img class="img" src="imgs/lee.gif" height="220" width="220">
+				<h2 class="titulo">LEE EVERETT</h2>
+				<p class="texto2">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum porro pariatur totam. Reprehenderit eum 
+					illo perspiciatis aliquid laudantium quae officia nisi earum? Rem, molestias ea. Doloremque molestiae nisi 
+					dolorem quaerat?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, nemo!
+					Lorem ipsum dolor sit <u>amet consectetur adipisicing elit</u> . Corrupti, sed doloremque cupiditate voluptatem cum
+					aut sequi veritatis necessitatibus corporis consequuntur inventore id, dolorem atque officiis ipsam dolore 
+					lorum. A, id! <br>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti. 
+				</p>
+			</div>
+		</section>
 	</main>
 </body>
 </html>		
