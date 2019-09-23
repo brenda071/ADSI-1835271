@@ -4,15 +4,139 @@
 	<meta charset="UTF-8">
 	<title>Parallax</title>
 	<link rel="stylesheet" href="css/master.css">
+	<style>
+		main.main {
+			background-color: #fff;
+			margin: 20px auto;
+			padding: 10px;
+			width: 1024px;
+		}
+		div.parallax {
+			border: 2px solid #1d4e6f;
+			width: 1024px;
+			height: 576px;
+		}
+		div.layer8,
+		div.layer7,
+		div.layer6,
+		div.layer5,
+		div.layer4,
+		div.layer3,
+		div.layer2,
+		div.layer1,
+		div.layer0,
+		div.layer9 {
+			height: 576px;
+			width: 1024px;
+		}
+		div.layer8 {
+			background: url(imgs/layer_08.png) repeat-x;	
+		}
+		div.layer7 {
+			background: url(imgs/layer_07.png) repeat-x;
+			margin-top: -576px;
+			animation: layer7 70s linear infinite;	
+		}
+		div.layer6 {
+			background: url(imgs/layer_06.png) repeat-x;
+			margin-top: -576px;	
+			animation: layer6 60s linear infinite;	
+		}
+		div.layer5 {background: url(imgs/layer_05.png) repeat-x;
+			margin-top: -576px;	
+			animation: layer5 50s linear infinite;	
+		}
+		div.layer4 {background: url(imgs/layer_04.png) repeat-x;
+			margin-top: -576px;		
+			animation: layer4 40s linear infinite;	
+		}
+		div.layer3 {background: url(imgs/layer_03.png) repeat-x;
+			margin-top: -576px;		
+			animation: layer3 30s linear infinite;	
+		}
+		div.layer2 {background: url(imgs/layer_02.png) repeat-x;
+			margin-top: -576px;		
+			animation: layer2 20s linear infinite;	
+		}
+		div.layer1 {background: url(imgs/layer_01.png) repeat-x;
+			margin-top: -576px;	
+			animation: layer1 10s linear infinite;	
+		}
+		div.layer0 {
+			background: url(imgs/naruto.gif) no-repeat;
+			background-size: 120px 80px;
+			margin-left: 450px;
+			margin-top: -205px;	
+			animation: layer0 20s ease-in infinite;	
+		}
+		div.layer9 {
+			background: url(imgs/pug.gif) linear infinite;
+			background-size: 120px 80px;
+			margin-left: 450px;
+			margin-top: -530px;	
+			animation: layer9 20s ease-in infinite;	
+		}
+		
+		@keyframes layer1 {
+			100% {
+				background-position: -2048px;
+			}
+		}
+		@keyframes layer2 {
+			100% {
+				background-position: -2048px;
+			}
+		}
+		@keyframes layer3 {
+			100% {
+				background-position: -2048px;
+			}
+		}
+		@keyframes layer4 {
+			100% {
+				background-position: -2048px;
+			}
+		}
+		@keyframes layer5 {
+			100% {
+				background-position: -2048px;
+			}
+		}
+		@keyframes layer6 {
+			100% {
+				background-position: -2048px;
+			}
+		}
+		@keyframes layer7 {
+			100% {
+				background-position: -2048px;
+			}
+		}
+		@keyframes layer9 {
+			100% {
+				background-position: -2048px;
+			}
+		
+
+	</style>
 </head>
 <body>
-	<main>
+	<main class="main">
 		<header>
 			<h1>Parallax</h1>
 		</header>
 		<section>
 			<div class="parallax">
-				
+				<div class="layer8"></div>
+				<div class="layer7"></div>
+				<div class="layer6"></div>
+				<div class="layer5"></div>
+				<div class="layer4"></div>
+				<div class="layer3"></div>
+				<div class="layer2"></div>
+				<div class="layer1"></div>
+				<div class="layer0"></div>
+				<div class="layer9"></div>
 			</div>
 		</section>
 	</main>

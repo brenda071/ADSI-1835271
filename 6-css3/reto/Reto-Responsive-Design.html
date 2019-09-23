@@ -100,6 +100,7 @@
 			cursor: text;
 		}
 		h2.titulo {
+			cursor: pointer;
 			font-family: dead;
 			font-size: 20px;
 		}
@@ -108,7 +109,9 @@
 		}
 
 		/* ============================================================= */
-	
+		h2.titulo:hover {
+			transform: scale(1.5);
+		}
 		img.img:hover,
 		main figure.logo:hover {
 			transform: scale(0.5);
@@ -165,9 +168,9 @@
 			}
 			section.two,
 			section.three {
-				margin: 10px;
+				margin: 8.5px;
 				height: 310px;
-				width: 750px;
+				width: 736px;
 			}
 			img.img {
 				position: relative;
@@ -225,7 +228,6 @@
 				border: 2px solid pink;
 				text-align: justify;
 				overflow: scroll;
-				scrollbar-face-color: #6685CA;
 			}
 		}
 	</style>

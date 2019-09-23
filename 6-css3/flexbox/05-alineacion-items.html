@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Activar Flex Box</title>
+	<style>
+		body {
+			font: 16px Arial;
+			color: #666;
+		}
+		h1 {
+			text-align: center;
+			background-color:#de908e;
+			border-radius: 4px;
+			color: white; 
+			margin: 10px;
+		}
+		ul.fruits {
+			background-color: #de908e;
+			border-radius: 4px;
+			display: flex;
+			height: 500px;
+			list-style: none;
+			padding: 0;
+			margin: 0 10px;
+		}
+		ul.fruits li {
+			background-color: #c9e1d3;
+			border-radius: 4px;
+			margin: 4px;
+		}
+		ul.fruits {justify-content: space-between}
+		ul.fruits.f1 { align-items: stretch;}
+		ul.fruits.f2 { align-items: flex-start;}
+		ul.fruits.f3 { align-items: flex-end;}
+		ul.fruits.f4 { align-items: center;}
+		ul.fruits.f5 { align-items: baseline;}
+
+	</style>
+</head>
+<body>
+	<h1>flex-wrap: nowrap;</h1>
+	<ul class="fruits f1">
+		<li><img src="imgs/grapes.svg" alt=""></li>
+		<li><img src="imgs/orange.svg" alt=""></li>
+		<li><img src="imgs/pear.svg" alt=""></li>
+	</ul>
+	<h1>flex-wrap: wrap;</h1>
+	<ul class="fruits f2">
+		<li><img src="imgs/grapes.svg" alt=""></li>
+		<li><img src="imgs/orange.svg" alt=""></li>
+		<li><img src="imgs/pear.svg" alt=""></li>
+	</ul>
+	<h1>flex-wrap: wrap-reverse;</h1>
+	<ul class="fruits f3">
+		<li><img src="imgs/grapes.svg" alt=""></li>
+		<li><img src="imgs/orange.svg" alt=""></li>
+		<li><img src="imgs/pear.svg" alt=""></li>
+	</ul>
+	<h1>flex-wrap: wrap-reverse;</h1>
+	<ul class="fruits f4">
+		<li><img src="imgs/grapes.svg" alt=""></li>
+		<li><img src="imgs/orange.svg" alt=""></li>
+		<li><img src="imgs/pear.svg" alt=""></li>
+	</ul>
+	<h1>flex-wrap: wrap-reverse;</h1>
+	<ul class="fruits f5">
+		<li><img src="imgs/grapes.svg" alt=""></li>
+		<li><img src="imgs/orange.svg" alt=""></li>
+		<li><img src="imgs/pear.svg" alt=""></li>
+	</ul>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Activar Flex Box</title>
+	<style>
+		body {
+			font: 16px Arial;
+			color: #666;
+		}
+		h1 {
+			text-align: center;
+			background-color:#de908e;
+			border-radius: 4px;
+			color: white; 
+			margin: 10px;
+		}
+		ul.fruits {
+			background-color: #de908e;
+			border-radius: 4px;
+			display: flex;
+			height: 448px;
+			list-style: none;
+			padding: 0;
+			margin: 0 10px;
+		}
+		ul.fruits li {
+			background-color: #c9e1d3;
+			border-radius: 4px;
+			margin: 4px;
+		}
+		ul.fruits.f1 { flex-wrap: nowrap;}
+		ul.fruits.f2 { flex-wrap: wrap;}
+		ul.fruits.f3 { flex-wrap: wrap-reverse;}
+
+	</style>
+</head>
+<body>
+		<h1>flex-wrap: nowrap;</h1>
+		<ul class="fruits f1">
+			<li><img src="imgs/grapes.svg" alt=""></li>
+			<li><img src="imgs/orange.svg" alt=""></li>
+			<li><img src="imgs/pear.svg" alt=""></li>
+		</ul>
+		<h1>flex-wrap: wrap;</h1>
+		<ul class="fruits f2">
+			<li><img src="imgs/grapes.svg" alt=""></li>
+			<li><img src="imgs/orange.svg" alt=""></li>
+			<li><img src="imgs/pear.svg" alt=""></li>
+		</ul>
+		<h1>flex-wrap: wrap-reverse;</h1>
+		<ul class="fruits f3">
+			<li><img src="imgs/grapes.svg" alt=""></li>
+			<li><img src="imgs/orange.svg" alt=""></li>
+			<li><img src="imgs/pear.svg" alt=""></li>
+		</ul>
+</body>
+</html>

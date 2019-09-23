@@ -19,7 +19,7 @@
 			background-size: cover;
 			position: absolute;
 			width: 120px;
-			animation: animDove 6s ease-in;
+			animation: animDove 6s ease-in infinite;
 		}
 		@keyframes animDove {
 			0%{ 
@@ -41,6 +41,13 @@
 				left: 200px; 
 				top: 250px;
 				transform: scale(5);
+			}
+			60% { 
+				background: url(imgs/scare.jpg);
+				background-size: 100px 200px;
+				left: 500px; 
+				top: 250px;
+				transform: scale(2);
 			}
 			100%{ 
 				left: 0px; 
