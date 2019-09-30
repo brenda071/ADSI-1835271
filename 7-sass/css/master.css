@@ -1,0 +1,23 @@
+body {
+  background-color: #d94d9b;
+  font: 16px Arial;
+}
+body main {
+  background-color: #fff;
+  padding: 20px;
+  margin: 20px auto;
+  width: 960px;
+}
+body main header h1, body main header h2, body main header h3 {
+  color: #742d56;
+  border-bottom: 3px solid #742d56;
+  text-align: center;
+}
+body main section.content {
+  color: gray;
+}
+body main section.content h2, body main section.content h3 {
+  columns: #742d56;
+  border-bottom: 2px solid #742d56;
+  text-align: center;
+}
