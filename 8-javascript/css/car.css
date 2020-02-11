@@ -1,0 +1,61 @@
+main.base {
+    background: transparent url(../imgs/base.png) no-repeat center;
+    height: 410px;
+    margin: 50px auto;
+    width: 310px;
+}
+main.base section.attributes ul {
+    list-style: none;
+    padding: 60px 0 0 110px;
+}
+
+main.base section.attributes ul li{
+    /* border: coral solid; */
+    color: #42210B;
+    font: 16px arial;
+    line-height: 20px;
+    margin: -3px 0px;
+    height: 38px;
+}
+main.base section.methods{
+    margin-left: 10px;
+}
+main.base section.methods button{
+    cursor: pointer;
+    border: none;
+    height: 57px;
+    transition: all 0.5s;
+    margin: 70px 6px;
+    width: 43px;
+}
+main.base section.methods button#btn-on{
+    background: transparent url(../imgs/btn-on.png) no-repeat center;
+}
+main.base section.methods button#btn-off{
+    background: transparent url(../imgs/btn-off.png) no-repeat center;
+}
+main.base section.methods button#btn-forw{
+    background: transparent url(../imgs/btn-forw.png) no-repeat center;
+}
+main.base section.methods button#btn-back{
+    background: transparent url(../imgs/btn-back.png) no-repeat center;
+}
+main.base section.methods button#btn-stop{
+    background: transparent url(../imgs/btn-stop.png) no-repeat center;
+}
+
+main.base section.methods button#btn-on:hover{
+    background: transparent url(../imgs/iniciarBtn.png) no-repeat center;
+}
+main.base section.methods button#btn-off:hover{
+    background: transparent url(../imgs/apagarBtn.png) no-repeat center;
+}
+main.base section.methods button#btn-forw:hover{
+    background: transparent url(../imgs/avanzarBtn.png) no-repeat center;
+}
+main.base section.methods button#btn-back:hover{
+    background: transparent url(../imgs/retrocederBtn.png) no-repeat center;
+}
+main.base section.methods button#btn-stop:hover{
+    background: transparent url(../imgs/apagarBtn.png) no-repeat center;
+}
