@@ -1,5 +1,5 @@
 main.base {
-    background: transparent url(../imgs/base.png) no-repeat center;
+    background: transparent url(../imgs/car/base.png) no-repeat center;
     height: 410px;
     margin: 50px auto;
     width: 310px;
@@ -29,33 +29,76 @@ main.base section.methods button{
     width: 43px;
 }
 main.base section.methods button#btn-on{
-    background: transparent url(../imgs/btn-on.png) no-repeat center;
+    background: transparent url(../imgs/car/btn-on.png) no-repeat center;
 }
 main.base section.methods button#btn-off{
-    background: transparent url(../imgs/btn-off.png) no-repeat center;
+    background: transparent url(../imgs/car/btn-off.png) no-repeat center;
 }
 main.base section.methods button#btn-forw{
-    background: transparent url(../imgs/btn-forw.png) no-repeat center;
+    background: transparent url(../imgs/car/btn-forw.png) no-repeat center;
 }
 main.base section.methods button#btn-back{
-    background: transparent url(../imgs/btn-back.png) no-repeat center;
+    background: transparent url(../imgs/car/btn-back.png) no-repeat center;
 }
 main.base section.methods button#btn-stop{
-    background: transparent url(../imgs/btn-stop.png) no-repeat center;
+    background: transparent url(../imgs/car/btn-stop.png) no-repeat center;
 }
 
 main.base section.methods button#btn-on:hover{
-    background: transparent url(../imgs/iniciarBtn.png) no-repeat center;
+    background: transparent url(../imgs/car/iniciarBtn.png) no-repeat center;
 }
 main.base section.methods button#btn-off:hover{
-    background: transparent url(../imgs/apagarBtn.png) no-repeat center;
+    background: transparent url(../imgs/car/apagarBtn.png) no-repeat center;
 }
 main.base section.methods button#btn-forw:hover{
-    background: transparent url(../imgs/avanzarBtn.png) no-repeat center;
+    background: transparent url(../imgs/car/avanzarBtn.png) no-repeat center;
 }
 main.base section.methods button#btn-back:hover{
-    background: transparent url(../imgs/retrocederBtn.png) no-repeat center;
+    background: transparent url(../imgs/car/retrocederBtn.png) no-repeat center;
 }
 main.base section.methods button#btn-stop:hover{
-    background: transparent url(../imgs/apagarBtn.png) no-repeat center;
+    background: transparent url(../imgs/car/botonDetener.png) no-repeat center;
+}
+main.base section#path{
+    height: 200px;
+    position: absolute;
+    left: 0;
+    width: 300px;
+}
+main.base section#path div#vehicle {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 200px;
+}
+/* ======================================== */
+/* Clase: on */
+main.base section#path div#vehicle.on{
+    animation: .1ms animOn infinite;
+}
+@keyframes animOn {
+    0%,100% { transform: translateY(0px); }
+    50% { transform: translateY(-2px); }
+}
+/* ======================================== */
+/* Clase: forward */
+main.base section#path.forward{
+    animation: 2s animForward linear infinite;
+}
+@keyframes animForward {
+    0% { transform: translateX(0px); }
+    100% { transform: translateX(1800px); }
+}
+/* ======================================== */
+/* Clase: backward */
+main.base section#path.backward{
+    animation-direction: reverse;
+    /* animation-play-state: paused; */
+}
+/* ======================================== */
+/* Clase: stop */
+main.base section#path.stop{
+    animation-play-state: paused;
 }

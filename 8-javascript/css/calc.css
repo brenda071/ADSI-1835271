@@ -1,0 +1,96 @@
+section div.calc ul::selection{
+    background-color: transparent;
+}
+section div.calc {
+    background: url(../imgs/calc/layer-light.png) no-repeat center;
+    height: 520px;
+    margin: 20px auto;
+    position: relative;
+    width: 320px;
+}
+section div.calc.dark {
+    background: url(../imgs/calc/layer-dark.png) no-repeat center;
+}
+section div.calc button#theme{
+    background: url(../imgs/calc/btn-light.png) no-repeat center;
+    border: none;
+    cursor: pointer;
+    height: 20px;
+    position: absolute;
+    top: 46px;left: 14px;
+    width: 40px;
+}
+
+section div.calc.dark button#theme {
+    background: url(../imgs/calc/btn-dark.png) no-repeat center;
+}
+
+section div.calc output#displayMath{
+    color: #546f79;
+    text-align: right;
+    position: absolute;
+    top: 84px;right: 25px;
+}
+
+section div.calc output#displayAnswer{
+    color: #2e4a50;
+    font-size: 2em;
+    text-align: right;
+    position: absolute;
+    top:120px;right: 25px;
+}
+
+section div.calc ul.buttons{
+    position: absolute;
+    list-style: none;
+    padding: 0px;
+    top: 165px;left: 14px;
+    width: 296px;
+}
+
+section div.calc ul.buttons li {
+    cursor: pointer;
+    display: inline-block;
+    margin: 3px 6.2px 0px 0px;
+    width: 64.3px;
+    height: 48px;
+}
+
+section div.calc ul.buttons li:hover {
+    transform: scale(1.1);
+}
+
+section div.calc ul.buttons li#btn-3,
+section div.calc ul.buttons li#btn-4,
+section div.calc ul.buttons li#btn-3,
+section div.calc ul.buttons li#btn-4 {
+    cursor: not-allowed;
+    /* filter: grayscale(1); */
+    filter: opacity(0.4);
+
+}
+
+section div.calc ul.buttons li#btn-1 {background: transparent url(../imgs/calc/btn-1.png);}
+section div.calc ul.buttons li#btn-2 {background: transparent url(../imgs/calc/btn-2.png);}
+section div.calc ul.buttons li#btn-3 {background: transparent url(../imgs/calc/btn-3.png);}
+section div.calc ul.buttons li#btn-4 {background: transparent url(../imgs/calc/btn-4.png);}
+section div.calc ul.buttons li#btn-5 {background: transparent url(../imgs/calc/btn-5.png);}
+section div.calc ul.buttons li#btn-6 {background: transparent url(../imgs/calc/btn-6.png);}
+section div.calc ul.buttons li#btn-7 {background: transparent url(../imgs/calc/btn-7.png);}
+section div.calc ul.buttons li#btn-8 {background: transparent url(../imgs/calc/btn-8.png);}
+section div.calc ul.buttons li#btn-9 {background: transparent url(../imgs/calc/btn-9.png);}
+section div.calc ul.buttons li#btn-10 {background: transparent url(../imgs/calc/btn-10.png);}
+section div.calc ul.buttons li#btn-11 {background: transparent url(../imgs/calc/btn-11.png);}
+section div.calc ul.buttons li#btn-12{background: transparent url(../imgs/calc/btn-12.png);}
+section div.calc ul.buttons li#btn-13 {background: transparent url(../imgs/calc/btn-13.png);}
+section div.calc ul.buttons li#btn-14 {background: transparent url(../imgs/calc/btn-14.png);}
+section div.calc ul.buttons li#btn-15 {background: transparent url(../imgs/calc/btn-15.png);}
+section div.calc ul.buttons li#btn-16 {background: transparent url(../imgs/calc/btn-16.png);}
+section div.calc ul.buttons li#btn-17 {background: transparent url(../imgs/calc/btn-17.png);}
+section div.calc ul.buttons li#btn-18 {background: transparent url(../imgs/calc/btn-18.png);}
+section div.calc ul.buttons li#btn-19 {background: transparent url(../imgs/calc/btn-19.png);}
+section div.calc ul.buttons li#btn-20 {background: transparent url(../imgs/calc/btn-20.png);}
+section div.calc ul.buttons li#btn-21 {background: transparent url(../imgs/calc/btn-21.png);}
+section div.calc ul.buttons li#btn-22 {background: transparent url(../imgs/calc/btn-22.png);}
+section div.calc ul.buttons li#btn-23 {background: transparent url(../imgs/calc/btn-23.png);}
+section div.calc ul.buttons li#btn-24 {background: transparent url(../imgs/calc/btn-24.png);}

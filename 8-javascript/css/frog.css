@@ -1,0 +1,46 @@
+
+body{
+    background-color: rgb(43, 162, 170);
+    background-image: linear-gradient(to right, rgba(0,0,0,0.07) 50%,transparent 0);
+    background-size: 250px 100%;
+    background-position: center;
+}
+main.game {
+    margin: 40px auto;
+    width: 800px;
+}
+main.game header.title{
+    background: url(../imgs/frog/tilte.png)no-repeat center;
+    height: 63px;
+    margin: 20px auto;
+    width: 700px;
+}
+main.game section.screen{
+    background: url(../imgs/frog/over.png)no-repeat center;
+    width: 868px;
+    height: 556px;
+    position: relative;
+    margin: 50px auto;
+}
+
+main.game section.screen button{
+    
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    height: 60px;
+    position: absolute;
+    left: 32%;
+    width: 320px;
+}
+main.game section.screen button#btn-play{
+    background: url(../imgs/frog/btn-play.png)no-repeat center;
+    top: 200px;
+
+}
+
+main.game section.screen button#btn-credits{
+    background: url(../imgs/frog/btn-credit.png)no-repeat center;
+    top: 280px;
+
+}

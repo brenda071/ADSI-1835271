@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Funciones</title>
+	<link rel="stylesheet" href="css/master.css">
+	<style>
+		input,button{
+			display: block;
+			border-radius: 20px;
+			border: none;
+			width: 250px;
+			margin: 8px auto;
+			padding: 10px;
+		}
+		button{
+			color:rgb(14, 180, 158);
+			background-color: black;
+			width: 270px;
+			cursor: pointer;
+		}
+		table, table td{
+            background-color: rgb(3, 126, 109);
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 10px;
+        }
+
+	</style>
+</head>
+<body>
+	<main>
+		<header>
+			<h1>Funciones</h1>
+		</header>
+		<section class="content">
+			<input type="number" id="nf" min="1" max="30" placeholder="Filas">
+			<input type="number" id="nc" min="1" max="30" placeholder="Columnas">
+			<button id="btn">Generar Tablas</button>
+			<hr>
+			<table id="tbl" border="1px"></table>
+		</section>
+	</main>
+	<script>
+		//Vars
+		var btn = document.getElementById('btn');
+		var tbl = document.getElementById('tbl');
+		//Events
+		btn.onclick = function(){
+			var nf = document.getElementById('nf').value;
+			var nc = document.getElementById('nc').value;
+			if (nf.length>0 && nc.length>0) {
+				drawTable(Math.abs(nf),Math.abs(nc));
+			}else{
+				alert("ingrese todas las entradas");
+			}
+		}
+		//Function
+		function drawTable(nf,nc){
+            if(nf < 21 && nc < 21){
+                var ctbl = "";
+                for (var i = 1; i <= nf; i++) {
+                    ctbl += "<tr>";
+                    for (var j = 1; j <= nc; j++){
+                        ctbl += "<td>f"+i+"-c"+j+"</td>"
+                    }
+    
+                    ctbl += "</tr>";
+                }
+                tbl.innerHTML = ctbl;
+            }else{
+                alert("Por el momento la cantidad de Filas/Columnas es muy Grandes");
+            }
+		}
+
+	</script>
+</body>
+</html>
+<!--    320*530
+        400*800
+-->
