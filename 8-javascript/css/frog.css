@@ -15,7 +15,10 @@ main.game header.title{
     margin: 20px auto;
     width: 700px;
 }
-main.game section.screen{
+main.game section.hide {
+    display: none;
+}
+main.game section.screen-home{
     background: url(../imgs/frog/over.png)no-repeat center;
     width: 868px;
     height: 556px;
@@ -23,7 +26,9 @@ main.game section.screen{
     margin: 50px auto;
 }
 
-main.game section.screen button{
+main.game section.screen-home button,
+main.game section.screen-credits button,
+main.game section.screen-gameover button{
     
     background-color: transparent;
     border: none;
@@ -33,14 +38,100 @@ main.game section.screen button{
     left: 32%;
     width: 320px;
 }
-main.game section.screen button#btn-play{
+main.game section.screen-home button#btn-play{
     background: url(../imgs/frog/btn-play.png)no-repeat center;
     top: 200px;
 
 }
 
-main.game section.screen button#btn-credits{
+main.game section.screen-home button#btn-credits{
     background: url(../imgs/frog/btn-credit.png)no-repeat center;
     top: 280px;
+}
 
+main.game section.screen-credits button#btn-back{
+    background: url(../imgs/frog/btn-back.png)no-repeat center;
+    top: 400px;
+}
+
+main.game section.screen-gameover button#btn-try{
+    background: url(../imgs/frog/btn-gameOver.png)no-repeat center;
+    bottom: 50px;
+}
+
+/* Screen Play - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+main.game section.screen-play{
+    background: url(../imgs/frog/base-2.png)no-repeat center;
+    width: 865px;
+    height: 556px;
+    position: relative;
+    overflow: hidden;
+    margin: 50px auto;
+}
+main.game section.screen-play ul.hearts {
+    list-style: none;
+    padding:0px;
+    position: absolute;
+    top: 5px; right: 4px;
+    width: 120px;
+    z-index: 3;
+}
+main.game section.screen-play ul.hearts li{
+    width: 65px;
+    height: 65px;
+    margin: -15px;
+    display: inline-block;
+
+}
+main.game section.screen-play ul.hearts li.heart{
+    background: url(../imgs/frog/heart2.png)no-repeat center;
+    animation: none;
+}
+main.game section.screen-play ul.hearts li.heart.active{
+    background: url(../imgs/frog/heart1.png)no-repeat center;
+    animation: 1s animHearts ease-in infinite;
+}
+@keyframes animHearts{
+    0%,100% {transform: scale(1)}
+    50% {transform: scale(1.3)}
+}
+main.game section.screen-play div#frog{
+    background: url(../imgs/frog/frog3.png)no-repeat center;
+    height: 60px;
+    width: 60px;
+    position: absolute;
+    /* transition: all 0.2s ease-in; */
+    left: 400px; top: 486px;
+    z-index: 1;
+}
+/* CAR */
+main.game section.screen-play div.car {
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 192px; left: 368px;
+    height: 52px;
+    width: 82px;
+    z-index: 2;
+}
+main.game section.screen-play div.car.car0{ background: url(../imgs/frog/car-blue.png); }
+main.game section.screen-play div.car.car1{ background: url(../imgs/frog/car-green.png); }
+main.game section.screen-play div.car.car2{ background: url(../imgs/frog/car-orange.png); }
+main.game section.screen-play div.car.car3{ background: url(../imgs/frog/car-red.png); }
+main.game section.screen-play div.car.car4{ background: url(../imgs/frog/car-yellow.png); }
+main.game section.screen-play div.car.car5{ background: url(../imgs/frog/car-blue.png); }
+/* Screen Credits - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+main.game section.screen-credits{
+    background: url(../imgs/frog/credits.png)no-repeat center;
+    width: 868px;
+    height: 556px;
+    position: relative;
+    margin: 50px auto;
+}
+main.game section.screen-gameover{
+    background: url(../imgs/frog/gameOver.png)no-repeat center;
+    width: 868px;
+    height: 556px;
+    position: relative;
+    margin: 50px auto;
 }
